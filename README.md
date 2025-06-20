@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+**Performance-Assessment1**
+Task:
+To create a React-based static website, containerize it using a multi-stage Dockerfile, and serve it using an NGINX container running locally.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Work Distribution**
+Himanshu:
+Designed and developed the static website using React.
+Created a simple UI displaying the Grid Dynamics logo and a welcome message.
 
-## Available Scripts
+Madala Sathwik:
+Wrote a multi-stage Dockerfile to build the React app and serve it using NGINX.
+Build and run the Docker container to serve the static website locally via port 3000.
 
-In the project directory, you can run:
+Verified application functionality and documented the build/run process.
 
-### `npm start`
+**Steps Performed:**
+1. React Application Setup
+Created a new React app.
+Added a logo and welcome message to the interface.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Dockerfile Creation
+Created a multi-stage Dockerfile:
+First stage used Node.js to build the React app.
+Second stage used NGINX to serve the static files.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Building Docker Image
+Used Docker CLI to build the image locally from the Dockerfile.
+docker build -t grid-react-app .
 
-### `npm test`
+5. Running the Docker Container
+Started the container on port 3000.
+docker run -p 3000:80 grid-react-app
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Verified that the application loaded correctly in the browser at http://localhost:3000.
 
-### `npm run build`
+5. Final Testing and Verification
+Confirmed successful app compilation via terminal.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Opened the local website and verified the UI with the Grid Dynamics branding.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Images:**
+Application Running in Browser
+<img width="1509" alt="Screenshot 2025-06-20 at 9 41 10 AM" src="https://github.com/user-attachments/assets/7a4cceb4-6735-40a8-a907-2be77ea12433" />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Terminal with Successful Compilation
+<img width="599" alt="Screenshot 2025-06-20 at 9 41 23 AM" src="https://github.com/user-attachments/assets/0b3beb8e-2ecf-494a-8a2f-cd600416de81" />
