@@ -7,17 +7,17 @@ To create a React-based static website, containerize it using a multi-stage Dock
 
 1.Himanshu:
 
-    Designed and developed the static website using React.
+   Designed and developed the static website using React.
 
-    Created a simple UI displaying the Grid Dynamics logo and a welcome message.
+   Created a simple UI displaying the Grid Dynamics logo and a welcome message.
 
 2.Madala Sathwik:
 
-    Wrote a multi-stage Dockerfile to build the React app and serve it using NGINX.
+   Wrote a multi-stage Dockerfile to build the React app and serve it using NGINX.
 
-    Build and run the Docker container to serve the static website locally via port 3000.
+   Build and run the Docker container to serve the static website locally via port 3000.
 
-    Verified application functionality and documented the build/run process.
+   Verified application functionality and documented the build/run process.
 
 **Steps Performed:**
 
