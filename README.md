@@ -20,23 +20,25 @@ Verified application functionality and documented the build/run process.
 **Steps Performed:**
 
 1. React Application Setup
-Created a new React app.
 
+Created a new React app.
 Added a logo and welcome message to the interface.
 
-3. Dockerfile Creation
+2. Dockerfile Creation
+   
 Created a multi-stage Dockerfile.
-
 First stage used Node.js to build the React app.
 
 Second stage used NGINX to serve the static files.
 
-5. Building Docker Image
+3. Building Docker Image
+   
 Used Docker CLI to build the image locally from the Dockerfile.
 
 docker build -t grid-react-app .
 
-7. Running the Docker Container
+4. Running the Docker Container
+   
 Started the container on port 3000.
 
 docker run -p 3000:80 grid-react-app
